@@ -1,3 +1,8 @@
 export default class Event{
-// implement your code here...
+  constructor(second, type, message) {
+    this.second = second;
+    this.type = type;
+    this.message = message;
+    console.log(`At second ${second}: ${JSON.stringify({type, message})}`);
+  }
 };
